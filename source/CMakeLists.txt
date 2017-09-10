@@ -1,0 +1,4 @@
+cmake_minimum_required(VERSION 3.5)
+project(source)
+
+add_subdirectory(01_ThisPointer)

@@ -6,3 +6,4 @@ void Point_set(Point* this, int a, int b)
 
     return;
 }
+// Compile: Not available

@@ -31,3 +31,5 @@ int main()
 
     return 0;
 }
+// Compile: clang++ -std=c++14
+//              -o 08_C_testMemberFunctionPointer 

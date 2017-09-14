@@ -29,3 +29,4 @@ int main()
 
     return 0;
 }
+// Compile: clang ++ -std=c++14 -o 01_C_testSimpleExample 01_C_testSimpleExample.cpp

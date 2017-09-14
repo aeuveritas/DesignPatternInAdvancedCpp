@@ -29,3 +29,4 @@ int main()
 
     return 0;
 }
+// Compile: clang++ -std=c++14 -o 04_C_testCallCheck 04_C_testCallCheck.cpp

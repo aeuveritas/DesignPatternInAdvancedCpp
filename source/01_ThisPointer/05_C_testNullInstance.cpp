@@ -21,3 +21,5 @@ int main()
 
     return 0;
 }
+// Compile: clang++ -std=c++14 
+//          -o 05_C_testNullInstance 05_C_testNullInstance.cpp

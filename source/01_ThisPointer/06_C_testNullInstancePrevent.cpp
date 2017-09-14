@@ -17,6 +17,7 @@ public:
     {
         if (p == nullptr)
         {
+            cout << "Null instance" << endl;
             return;
         }
 
@@ -33,3 +34,5 @@ int main()
 
     return 0;
 }
+// Compile: clang++ -std=c++14
+//              -o 06_C_testNullInstancePrevent 06_C_testNullInstancePrevent.cpp

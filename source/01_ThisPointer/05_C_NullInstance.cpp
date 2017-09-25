@@ -1,4 +1,4 @@
-// 05_C_testNullInstance.cpp
+// 05_C_NullInstance.cpp
 #include <iostream>
 using namespace std;
 
@@ -22,4 +22,4 @@ int main()
     return 0;
 }
 // Compile: clang++ -std=c++14 
-//          -o 05_C_testNullInstance 05_C_testNullInstance.cpp
+//          -o 05_C_NullInstance 05_C_NullInstance.cpp

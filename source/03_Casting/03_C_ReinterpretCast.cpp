@@ -1,4 +1,4 @@
-// 03_C_testReinterpretCast.cpp
+// 03_C_ReinterpretCast.cpp
 #include <iostream>
 using namespace std;
 
@@ -14,14 +14,14 @@ public:
 int main()
 {
     string name = "bastPtr";
-    BaseClass* basePtr = new BaseClass{};
+    BaseClass* basePtr = new BaseClass {};
     long address = reinterpret_cast<long>(&basePtr);
     cout << "Address is " << address << endl;
-    
+
     basePtr = reinterpret_cast<BaseClass*>(address);
     basePtr->printClass(name);
-    
+
     return 0;
 }
 // Compile: clang++ -std=c++14
-//              -o 03_C_testReinterpretCast 03_C_testReinterpretCast.cpp
+//              -o 03_C_ReinterpretCast 03_C_ReinterpretCast.cpp

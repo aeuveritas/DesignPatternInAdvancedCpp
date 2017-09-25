@@ -1,4 +1,4 @@
-// 01_C_testSimpleExample.cpp
+// 01_C_SimpleExample.cpp
 #include <iostream>
 using namespace std;
 
@@ -29,4 +29,5 @@ int main()
 
     return 0;
 }
-// Compile: clang ++ -std=c++14 -o 01_C_testSimpleExample 01_C_testSimpleExample.cpp
+// Compile: clang ++ -std=c++14 -o 01_C_SimpleExample 01_C_SimpleExample.cpp
+

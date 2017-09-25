@@ -1,4 +1,4 @@
-// 03_N_testStaticMember.cpp
+// 03_N_StaticMember.cpp
 #include <iostream>
 using namespace std;
 

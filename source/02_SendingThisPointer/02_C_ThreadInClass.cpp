@@ -1,4 +1,4 @@
-// 02_C_testThreadInClass.cpp
+// 02_C_ThreadInClass.cpp
 #include <iostream>
 
 #include <pthread.h>
@@ -11,20 +11,20 @@ class ThreadLib
 private:
     pthread_t tid;
 
-public:    
+public:
     ThreadLib()
-    : tid(0)
+        : tid(0)
     {}
-    
+
     void run()
     {
         // Create thread
         pthread_create(&tid, NULL, _threadLoop, this);
-        
+
         // Wait for thread
         pthread_join(tid, NULL);
         cout << "Thread id: " << tid << endl;
-        
+
         return;
     }
 
@@ -40,7 +40,7 @@ public:
     virtual bool threadLoop()
     {
         cout << "ThreadLib's threadLoop" << endl;
-        
+
         return false;
     }
 };
@@ -59,11 +59,11 @@ class MyThreadLib : public ThreadLib
 int main()
 {
     MyThreadLib t;
-    
+
     t.run();                    // Thread is created and
-                                // threadLoop() of MyThreadLib is executed
+    // threadLoop() of MyThreadLib is executed
 
     return 0;
 }
-// Compile: clang++ -pthread 
-//          -o 02_C_testThreadInClass 02_C_testThreadInClass.cpp
+// Compile: clang++ -pthread
+//          -o 02_C_ThreadInClass 02_C_ThreadInClass.cpp

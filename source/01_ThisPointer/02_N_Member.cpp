@@ -1,4 +1,4 @@
-// 02_N_testMember.cpp
+// 02_N_Member.cpp
 void Point_set(Point* this, int a, int b)
 {
     this->x = a;

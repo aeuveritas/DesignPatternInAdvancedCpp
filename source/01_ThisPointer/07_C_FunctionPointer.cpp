@@ -1,4 +1,4 @@
-// 07_C_testFunctionPointer.cpp
+// 07_C_FunctionPointer.cpp
 #include <iostream>
 using namespace std;
 
@@ -18,4 +18,4 @@ int main()
     return 0;
 }
 // Compile: clang++ -std=c++14 
-//          -o 07_C_testFunctionPointer 07_C_testFunctionPointer.cpp
+//          -o 07_C_FunctionPointer 07_C_FunctionPointer.cpp

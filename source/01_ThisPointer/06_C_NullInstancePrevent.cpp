@@ -1,4 +1,4 @@
-// 06_C_testNullInstancePrevent.cpp
+// 06_C_NullInstancePrevent.cpp
 #include <iostream>
 using namespace std;
 
@@ -35,4 +35,4 @@ int main()
     return 0;
 }
 // Compile: clang++ -std=c++14
-//              -o 06_C_testNullInstancePrevent 06_C_testNullInstancePrevent.cpp
+//              -o 06_C_NullInstancePrevent 06_C_NullInstancePrevent.cpp

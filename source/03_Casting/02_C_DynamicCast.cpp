@@ -1,8 +1,9 @@
-// 02_C_testDynamicCast.cpp
+// 02_C_DynamicCast.cpp
 #include <iostream>
 using namespace std;
 
-class BaseClass {
+class BaseClass
+{
 public:
     virtual void printClass(string name)
     {
@@ -17,7 +18,7 @@ public:
     {
         cout << name << " is DerivedClass" << endl;
     }
-    
+
     void childMth(string name)
     {
         cout << name << " can call child method" << endl;
@@ -34,16 +35,16 @@ int main()
     BaseClass base;
     DerivedClass derive;
     BaseClass* _basePtr = &derive;
-    
+
     string name = "base2DerivePtr";
     DerivedClass* base2DerivePtr = dynamic_cast<DerivedClass*>(&base);
     base2DerivePtr ? base2DerivePtr->printClass(name) : printNull(name);
-    
+
     name = "basePtr";
     BaseClass* basePtr = dynamic_cast<BaseClass*>(_basePtr);
     basePtr ? basePtr->printClass(name) : printNull(name);
     //basePtr->childMth(name);      // Compile error
-                                    // BaseClass does not have childMth()
+    // BaseClass does not have childMth()
 
     name = "derivePtr";
     DerivedClass* derivePtr = dynamic_cast<DerivedClass*>(_basePtr);
@@ -54,7 +55,7 @@ int main()
     BaseClass& baseRef = dynamic_cast<BaseClass&>(*_basePtr);
     baseRef.printClass(name);
     //baseRef.childMth(name);       // Compile error
-                                    // BaseClass does not have childMth()
+    // BaseClass does not have childMth()
 
     name = "deriveRef";
     DerivedClass& deriveRef = dynamic_cast<DerivedClass&>(*_basePtr);
@@ -64,4 +65,4 @@ int main()
     return 0;
 }
 // Compile: clang++ -std=c++14
-//              -o 02_C_testDynamicCast 02_C_testDynamicCast.cpp
+//              -o 02_C_DynamicCast 02_C_DynamicCast.cpp

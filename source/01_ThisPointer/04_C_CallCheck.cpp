@@ -1,4 +1,4 @@
-// 04_C_testCallCheck.cpp
+// 04_C_CallCheck.cpp
 #include <iostream>
 using namespace std;
 
@@ -29,4 +29,4 @@ int main()
 
     return 0;
 }
-// Compile: clang++ -std=c++14 -o 04_C_testCallCheck 04_C_testCallCheck.cpp
+// Compile: clang++ -std=c++14 -o 04_C_CallCheck 04_C_CallCheck.cpp

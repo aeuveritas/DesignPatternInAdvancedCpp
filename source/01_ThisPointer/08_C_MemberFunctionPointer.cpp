@@ -1,4 +1,4 @@
-// 08_C_testMemberFunctionPointer.cpp
+// 08_C_MemberFunctionPointer.cpp
 #include <iostream>
 using namespace std;
 
@@ -32,4 +32,4 @@ int main()
     return 0;
 }
 // Compile: clang++ -std=c++14
-//              -o 08_C_testMemberFunctionPointer 08_C_testMemberFunctionPointer.cpp
+//              -o 08_C_MemberFunctionPointer 08_C_MemberFunctionPointer.cpp

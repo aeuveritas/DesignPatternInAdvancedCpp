@@ -1,11 +1,11 @@
-// 01_C_testThread.cpp
+// 01_C_Thread.cpp
 #include <iostream>
 
 #include <pthread.h>
 
 using namespace std;
 
-void* foo(void *p)
+void* foo(void* p)
 {
     string* str = static_cast<string*>(p);
     cout << str->c_str() << endl;
@@ -13,7 +13,8 @@ void* foo(void *p)
     return NULL;
 }
 
-int main() {
+int main()
+{
     pthread_t tid;
     string str = "Thread Start";
 
@@ -22,9 +23,9 @@ int main() {
 
     // Wait for thread
     pthread_join(tid, NULL);
-    
+
     cout << "Thread id: " << tid << endl;
     return 0;
 }
-// Compile: clang++ -pthread 
-//          -o 01_C_testThread 01_C_testThread.cpp
+// Compile: clang++ -pthread
+//          -o 01_C_Thread 01_C_Thread.cpp

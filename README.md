@@ -12,3 +12,5 @@ Design pattern, C++11/14, Algorithm, STL and so on
 [03. Casting](https://kunicom.blogspot.kr/2017/09/03-casting.html)
 
 [04. Adapter](https://kunicom.blogspot.kr/2017/09/04-adapter.html)
+
+[05. Virtual Function](https://kunicom.blogspot.kr/2017/11/05-virtual-function.html)

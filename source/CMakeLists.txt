@@ -1,7 +1,14 @@
 cmake_minimum_required(VERSION 3.5)
 project(source)
 
-add_subdirectory(01_ThisPointer)
-add_subdirectory(02_SendingThisPointer)
-add_subdirectory(03_Casting)
-add_subdirectory(04_Adapter)
+set(SUBDIRS
+    01_ThisPointer
+    02_SendingThisPointer
+    03_Casting
+    04_Adapter
+    05_VirtualFunction
+)
+     
+foreach(subdir ${SUBDIRS})
+    add_subdirectory(${subdir})
+endforeach(subdir ${SUBDIRS})

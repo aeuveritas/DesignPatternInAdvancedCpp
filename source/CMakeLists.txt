@@ -7,6 +7,7 @@ set(SUBDIRS
     03_Casting
     04_Adapter
     05_VirtualFunction
+    06_LSP
 )
      
 foreach(subdir ${SUBDIRS})

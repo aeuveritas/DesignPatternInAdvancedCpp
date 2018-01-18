@@ -3,7 +3,7 @@
 #include <list>
 using namespace std;
 
-// Prohibits the original methods of list
+// Prohibits the original functions of list
 template <typename T>
 class Stack : private list<T>
 {

@@ -63,7 +63,7 @@ public:
 
         sleep(time);
 
-        // Call print method
+        // Call print function
         switch (time) {
         case 10:
             self->waitSec10();
@@ -92,7 +92,7 @@ public:
 class MyTimeLib : public TimerLib
 {
 public:
-    // Print method
+    // Print function
     virtual void waitSec10()
     {
         cout << "Interval 10" << endl;

@@ -8,6 +8,7 @@ set(SUBDIRS
     04_Adapter
     05_VirtualFunction
     06_LSP
+    07_Prototype
 )
      
 foreach(subdir ${SUBDIRS})

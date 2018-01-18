@@ -14,3 +14,7 @@ Design pattern, C++11/14, Algorithm, STL and so on
 [04. Adapter](https://kunicom.blogspot.kr/2017/09/04-adapter.html)
 
 [05. Virtual Function](https://kunicom.blogspot.kr/2017/11/05-virtual-function.html)
+
+[06. LSP](https://kunicom.blogspot.kr/2018/01/06-lsp.html)
+
+[07. Prototype](https://kunicom.blogspot.kr/2018/02/07-prototype-pattern.html)

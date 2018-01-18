@@ -22,7 +22,7 @@ public:
         return val;
     }
     
-    virtual void print()
+    virtual void foo()
     {
         cout << "BaseClass val: " << val << endl;
     }
@@ -44,7 +44,7 @@ public:
         num = _num;
     }
 
-    virtual void print()
+    virtual void foo()
     {
         cout << "DerivedClass val: " << val
              << ", num: " << num << endl;

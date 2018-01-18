@@ -11,7 +11,7 @@ public:
     static void foo(int a)
     {
         x = a;  // = this->x = a
-                // However, this is not existed in this static method.
+                // However, this is not existed in this static function.
         return;
     }
 };

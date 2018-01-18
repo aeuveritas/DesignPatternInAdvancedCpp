@@ -21,7 +21,7 @@ public:
 
     void childMth(string name)
     {
-        cout << name << " can call child method" << endl;
+        cout << name << " can call child function" << endl;
     }
 };
 

@@ -18,3 +18,5 @@ Design pattern, C++11/14, Algorithm, STL and so on
 [06. LSP](https://kunicom.blogspot.kr/2018/01/06-lsp.html)
 
 [07. Prototype](https://kunicom.blogspot.kr/2018/02/07-prototype-pattern.html)
+
+[08. Template Method](https://kunicom.blogspot.kr/2018/03/08-template-method.html)

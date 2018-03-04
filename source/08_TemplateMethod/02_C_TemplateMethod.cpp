@@ -1,4 +1,4 @@
-// 01_C_Prototype.cpp
+// 02_C_TemplateMethod.cpp
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -6,42 +6,35 @@ using namespace std;
 class BaseClass
 {
 public:
-    virtual void foo()
+    void foo()
     {
-        cout << "Foo for Base class" << endl;
+        cout << "Mutex lock" << endl;
+        fooImpl();
+        cout << "Mutext unlock" << endl;
     }
 
-    virtual BaseClass* clone()
+protected:
+    virtual void fooImpl() 
     {
-        return new BaseClass(*this);
+        cout << "Foo for Base class" << endl;
     }
 };
 
 class DerivedClassFirst : public BaseClass
 {
 public:
-    virtual void foo() override
+    virtual void fooImpl() override
     {
         cout << "Foo for First derived class" << endl;
-    }
-
-    DerivedClassFirst* clone() override
-    {
-        return new DerivedClassFirst(*this);
     }
 };
 
 class DerivedClassSecond : public BaseClass
 {
 public:
-    virtual void foo() override
+    virtual void fooImpl() override
     {
         cout << "Foo for Second derived class" << endl;
-    }
-
-    DerivedClassSecond* clone() override
-    {
-        return new DerivedClassSecond(*this);
     }
 };
 
@@ -49,14 +42,9 @@ int main()
 {
     vector<BaseClass*> v;
 
+    v.push_back(new BaseClass);
     v.push_back(new DerivedClassFirst);
     v.push_back(new DerivedClassSecond);
-    
-    int size = v.size();
-    for(int i = 0; i < size; i++)
-    {
-        v.push_back(v[i]->clone());
-    }
     
     for(BaseClass* p : v)
     {
@@ -66,4 +54,5 @@ int main()
     return 0;
 }
 // Compile: clang++ -std=c++14
-//              -o 01_C_Prototype 01_C_Prototype.cpp
+//              -o 02_C_TemplateMethod 02_C_TemplateMethod.cpp
+

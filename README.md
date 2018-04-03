@@ -20,3 +20,5 @@ Design pattern, C++11/14, Algorithm, STL and so on
 [07. Prototype](https://kunicom.blogspot.kr/2018/02/07-prototype-pattern.html)
 
 [08. Template Method](https://kunicom.blogspot.kr/2018/03/08-template-method.html)
+
+[09. Virtual Destructor](https://kunicom.blogspot.kr/2018/04/09-virtual-destructor.html) 

@@ -10,6 +10,7 @@ set(SUBDIRS
     06_LSP
     07_Prototype
     08_TemplateMethod
+    09_VirtualDestructor
 )
      
 foreach(subdir ${SUBDIRS})

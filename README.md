@@ -24,3 +24,5 @@ Design pattern, C++11/14, Algorithm, STL and so on
 [09. Virtual Destructor](https://kunicom.blogspot.kr/2018/04/09-virtual-destructor.html) 
 
 [10. Abstract and Concrete Class](https://kunicom.blogspot.kr/2018/04/10-abstract-concrete-class.html)
+
+[11. DIP](https://kunicom.blogspot.kr/2018/04/11-dip.html)

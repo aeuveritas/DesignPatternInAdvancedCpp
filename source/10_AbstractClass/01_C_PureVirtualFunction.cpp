@@ -13,7 +13,10 @@ public:
 class DerivedClass : public BaseClass
 {
 public:
-	void foo() {}
+	void foo() 
+    {
+        cout << "Foo" << endl;
+    }
 };
 
 int main()

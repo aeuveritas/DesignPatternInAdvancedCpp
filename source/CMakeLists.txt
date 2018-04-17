@@ -12,6 +12,7 @@ set(SUBDIRS
     08_TemplateMethod
     09_VirtualDestructor
     10_AbstractClass
+    11_DIP
 )
      
 foreach(subdir ${SUBDIRS})
